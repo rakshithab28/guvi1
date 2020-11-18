@@ -1,0 +1,188 @@
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <style>
+        .split {
+            height: 100%;
+            width: 50%;
+            position: absolute;
+            z-index: 1;
+            /* top: 0; */
+            overflow-x: hidden;
+           
+        }
+        .vertical {
+            border-left: 1px solid black;
+            height: 550px;
+            position: absolute;
+            left: 50%;
+        }
+        .icon {
+         padding: 10px;
+        background: rgb(102, 176, 211);
+          color: rgb(27, 23, 23);
+         min-width: 40px;
+          text-align: center;
+          border-radius: 20px;
+}
+        .left {
+            left: 150px;
+            padding-top: 625px;
+        }
+
+        .right {
+            right: 150px;
+            padding-top: 500px;
+        }
+
+        .centered {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .centered1 {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        form {
+            padding-left: 20px;
+        }
+
+        #main {
+            padding-top: 20px;
+        }
+
+        .box {
+            height: 120px;
+            width: 100%;
+            text-align: center;
+            padding-top: 10px;
+            background-color: cornflowerblue;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 30px;
+        }
+       
+
+        .slider {
+            display: inline;
+            -webkit-appearance: none;
+            height: 15px;
+            border-radius: 5px;
+            background: #d3d3d3;
+            outline: none;
+            -webkit-transition: .2s;
+            transition: opacity .2s;
+            width: 50%;
+            margin-left: 5%;
+        }
+
+        #green_slider {
+            background: linear-gradient(to right, rgb(161, 158, 158), rgb(74, 182, 74));
+        }
+
+        #blue_slider {
+            background: linear-gradient(to right, rgb(161, 158, 158), rgb(84, 84, 209));
+        }
+        .container{
+            padding-left: 200px;
+            padding-right: 200px;
+            
+        }
+        form{
+            padding-top:10px;
+        }
+    </style>
+</head>
+
+<body class="container"> 
+
+    <div id="main">
+        <hr>
+        <div class="box">
+            <img src="dummy-image.jpg" height="75" width="75"><br>
+            Rakshitha 
+        </div>
+        <div style="text-align: center;">gmail:abcd@gmail.com , Contact Number:7685758375</div>
+        <hr>
+        <div class="split left">
+            <div class="centered">
+                <i class="fa fa-user icon"></i><span style="font-size: larger;font-weight: bold;padding-left:10px;">Profile</span>
+                <p>Multi-faced software engineer with creative and performance oriented approach,
+                    with excellent communication skills.Hightly performance oriented and well organized.</p>
+                    <i class='fas fa-code' style='font-size:24px'></i><span style="font-size: larger;font-weight: bold;padding-left:10px;">Skills</span><br>
+                <div class="skill">
+                    <div><span>Technical Skills</span>
+                        <form action="/action_page.php">
+                            <label for="javascri">Javascript</label>
+                            <input type="range" min="0" max="10"  class="slider" id="green_slider"><br>
+                            <label for="javascri">HTML</label>
+                            <input type="range" min="0" max="10"  class="slider" id="green_slider"><br>
+                            <label for="javascri">CSS</label>
+                            <input type="range" min="0" max="10"  class="slider" id="green_slider"><br>
+                            <label for="javascri">React</label>
+                            <input type="range" min="0" max="10"  class="slider" id="green_slider"><br>
+                            <label for="javascri">Deployment</label>
+                            <input type="range" min="0" max="10"  class="slider" id="green_slider"><br>
+                        </form>
+                    </div>
+                    <div><span>Additional Skills</span> 
+                        <form action="/action_page.php">
+                            <label for="javascri">Javascript</label>
+                            <input type="range" min="0" max="10" class="slider" id="blue_slider"><br>
+                            <label for="javascri">HTML</label>
+                            <input type="range" min="0" max="10" class="slider" id="blue_slider"><br>
+                            <label for="javascri">CSS</label>
+                            <input type="range" min="0" max="10" class="slider" id="blue_slider"><br>
+                            <label for="javascri">React</label>
+                            <input type="range" min="0" max="10" class="slider" id="blue_slider"><br>
+                            <label for="javascri">Deployment</label>
+                            <input type="range" min="0" max="10" class="slider" id="blue_slider"><br>
+                        </form>
+                    </div>
+                </div>
+               
+            </div>
+
+
+        </div>
+        <div class="vertical"></div>
+        <div class="split right">
+            <div class="centered1">
+                <i class='fas fa-desktop'></i> <span style="font-size: larger;font-weight: bold;padding-left:10px;">Working Experience</span>
+                
+                <div>
+                    <span>ABC Pvt Ltd</span><br>
+                    Lorem ipsum is a name for a common type of placeholder text. Also known as filler or dummy text, this is simply copy that serves to fill a space without actually saying 
+                    anything meaningful. It's essentially nonsense text, but gives an idea of what real text will look like in the final product.Worked in the entire life cycle of the project from design, development and testing of
+                </div>
+                <br>
+                <i class='fas fa-award' style='font-size:24px'></i><span style="font-size: larger;font-weight: bold;padding-left:10px;">Education Qualification</span>
+                <br><span>Education immersion program</span>
+                <p>Lorem ipsum is a name for a common type of placeholder text. Also known as filler or dummy text,
+                    this is simply copy that serves to fill a space without actually saying anything meaningful.
+                    It's essentially nonsense text, but gives an idea of what real text will look like in the final
+                    product.
+                    Lorem ipsum is a name for a common type of placeholder text. Also known as filler or dummy text,
+                    this but gives an idea of what real text will look like in the final
+                    product</p>
+                    
+
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
