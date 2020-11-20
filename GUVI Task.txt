@@ -1,0 +1,54 @@
+HTTP1.1 vs HTTP 2.0
+
+1.HTTP 2.0 is a binary protocol that multiplexes numerous streams going over a single (normally TLS-encrypted) TCP connection.
+
+2.The contents of each stream are HTTP 1.1 requests and responses, just encoded and packed up differently. 
+
+3.HTTP 2.0 is much faster and more efficient than HTTP1.1. It prioritizes content during the loading process.
+
+
+HTTP History version
+The term hypertext was coined by Ted Nelson in 1965 in the Xanadu Project, which was in turn inspired by Vannevar Bush's 1930s vision 
+of the microfilm-based information retrieval and management "memex" system described in his 1945 essay "As We May Think". 
+Tim Berners-Lee and his team at CERN are credited with inventing the original HTTP, along with HTML and the associated technology 
+for a web server and a text-based web browser. Berners-Lee first proposed the "WorldWideWeb" project in 1989—now known as the World Wide Web. 
+The first version of the protocol had only one method, namely GET, which would request a page from a server. The response from the server was always an HTML page.
+
+The first documented version of HTTP was HTTP V0.9 (1991). 
+Dave Raggett led the HTTP Working Group (HTTP WG) in 1995 and wanted to expand the protocol with extended operations, 
+extended negotiation, richer meta-information, tied with a security protocol which became more efficient by adding additional methods and header fields.
+RFC 1945 officially introduced and recognized HTTP V1.0 in 1996.
+
+The HTTP WG planned to publish new standards in December 1995 and the support for pre-standard HTTP/1.1 based on the then developing 
+RFC 2068 (called HTTP-NG) was rapidly adopted by the major browser developers in early 1996. End-user adoption of the new browsers was rapid.
+ In March 1996, one web hosting company reported that over 40% of browsers in use on the Internet were HTTP 1.1 compliant. 
+That same web hosting company reported that by June 1996, 65% of all browsers accessing their servers were HTTP/1.1 compliant.
+The HTTP/1.1 standard as defined in RFC 2068 was officially released in January 1997. 
+Improvements and updates to the HTTP/1.1 standard were released under RFC 2616 in June 1999.
+
+In 2007, the HTTP Working Group was formed, in part, to revise and clarify the HTTP/1.1 specification. In June 2014, the WG released an updated six-part specification obsoleting RFC 2616:
+
+RFC 7230, HTTP/1.1: Message Syntax and Routing
+RFC 7231, HTTP/1.1: Semantics and Content
+RFC 7232, HTTP/1.1: Conditional Requests
+RFC 7233, HTTP/1.1: Range Requests
+RFC 7234, HTTP/1.1: Caching
+RFC 7235, HTTP/1.1: Authentication
+HTTP/2 was published as RFC 7540 in May 2015.
+
+
+List 5 difference between Browser JS vs Nodejs.
+1.JavaScript is a programming language, which runs in web browsers. 
+Node.js is an interpreter or running environment for JavaScript which holds a lot of requiring libraries and all.
+
+2.javascript runs in any engine like Fire fox,safari,google chrome(v8).
+  Node js runs only in v8 engine.
+
+3.Javascript using for any client side activity for a web application.
+  Node js is mainly used for accessing or performing any non blocking operation of any operating system.
+
+
+what happens when you type url in the address bar in the browser?
+Url in the browser is converted by the DNS to access the contents.
+HTTP request is sent to access the contents and in response the contents will be poped in the browser
+
