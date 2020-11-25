@@ -1,0 +1,86 @@
+execute and see at least 15 cli commands. like mkdir, ls 
+1.ls -a
+2.ls -l
+3.ls -la
+4.cd
+5.pwd-command to confirm your directory name.
+6.touch file_name - create an empty file
+7.cat - display the content of a file
+8.mv -move a file and directory
+9.mv old_file_name new_file_name - rename a file
+10.cp file_to_copy new_file_name - copy a file.
+11.rm file_to_remove- removes a file.
+12. clear - clears the terminal screen.
+13. cal - dispalys the calender.
+14.echo
+15.date - Displays current time and date.
+---------------------------------------------------------------------------------------------------------------------------------------------
+Use typeof in all the datatypes and check the result
+typeof(1)
+typeof(1.1)
+typeof("1.1")
+typeof(true)
+typeof(null)
+typeof(undefined)
+typeof([])
+typeof({})
+solution:
+typeof(1):number
+typeof(1.1);:number
+typeof("1.1"):string
+typeof(true):boolean
+typeof(null):object
+typeof(undefined):undefined
+typeof([]):object
+typeof({}):object
+-----------------------------------------------------------------------------------------------------------------------------------------------
+What is the difference between window, screen, and document in Javascript
+Window is the main JavaScript object root, the global object in a browser, also can be treated as the root of the document object model.
+screen is a small information object about physical screen dimensions.
+document is the main object of the potentially visible (or better yet: rendered) document object model/DOM.
+-------------------------------------------------------------------------------------------------------------------------------------------------
+objects and its internal representation in Javascript
+Objects are more complex and each object may contain any combination of these primitive data-types as well as reference data-types.
+An object, is a reference data type. Variables that are assigned a reference value are given a reference or a pointer to that value.
+That reference or pointer points to the location in memory where the object is stored. The variables don’t actually store the value.
+Internal representaion: Object Creation
+obj: var objName={id:1 , name:’Rakshitha’ , display:function() }
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Extract and print the flag url of all the countries in console. use the html template. 
+
+https://restcountries.eu/rest/v2/all
+
+solution:
+<html lang="en">
+    <head>
+       <link href='http://fonts.googleapis.com/css?family=Quicksand:300' rel='stylesheet' type='text/css'>
+
+    </head>
+    <body>
+        <div>
+      
+            <div>
+                Guvi Geek Network
+            </div>
+           </div>
+    </body>
+   <script>
+       var request = new XMLHttpRequest();
+request.open('GET','http://restcountries.eu/rest/v2/all',true);
+request.onerror = function () {
+    console.log("** An error occurred during the transaction");
+  };
+request.send();
+request.onload=function(){
+var data = JSON.parse(this.response);
+console.log(data);
+
+
+}
+   </script>
+        
+    </html>
+
+
+ 
+
