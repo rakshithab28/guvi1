@@ -1,0 +1,373 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<style>
+
+</style>
+
+<body style="text-align: center;">
+    <div></div>
+    <p id="GFG_DOWN"></p>
+    <button onClick="showInput()">
+        Submit
+    </button>
+    <script>
+        var down = document.getElementById("GFG_DOWN");
+
+        // Create a break line element 
+        var br = document.createElement("br");
+        
+
+            // Create a form synamically 
+            var form = document.createElement("form");
+            // form.setAttribute("method", "post"); 
+            // form.setAttribute("action", "submit.php"); 
+
+            // Create an input element for Full Name 
+            var FN = document.createElement("input");
+            FN.id = "first";
+            FN.setAttribute("type", "text");
+            FN.setAttribute("name", "First Name");
+            FN.setAttribute("placeholder", "First Name");
+
+            // Create an input element for Last Name 
+            var LN = document.createElement("input");
+            LN.setAttribute("type", "text");
+            LN.setAttribute("name", "Last Name");
+            LN.setAttribute("placeholder", "Last Name");
+
+            // Create an input element for Address 
+            var AD = document.createElement("input");
+            AD.setAttribute("type", "text");
+            AD.setAttribute("name", "Address");
+            AD.setAttribute("placeholder", "Address");
+
+            // Create an input element for Pincode 
+            var PWD = document.createElement("input");
+            PWD.setAttribute("type", "number");
+            PWD.setAttribute("name", "Pincode");
+            PWD.setAttribute("placeholder", "Pincode");
+
+            // Create an input element for Gender
+            var GEN = document.createElement("input");
+            GEN.setAttribute("type", "text");
+            GEN.setAttribute("name", "Gender");
+            GEN.setAttribute("placeholder", "Gender");
+
+            // Create an input element for Food
+            var Food = document.createElement("input");
+            Food.setAttribute("type", "text");
+            Food.setAttribute("name", "food");
+            Food.setAttribute("placeholder", "food");
+
+            // Create an input element for State
+            var STA = document.createElement("input");
+            STA.setAttribute("type", "text");
+            STA.setAttribute("name", "State");
+            STA.setAttribute("placeholder", "State");
+
+            // Create an input element for Country
+            var COUN = document.createElement("input");
+            COUN.setAttribute("type", "text");
+            COUN.setAttribute("name", "Country");
+            COUN.setAttribute("placeholder", "Country");
+
+            // create a submit button 
+            var s = document.createElement("button");
+            s.setAttribute("type", "submit");
+            s.setAttribute("value", "Submit");
+       
+
+            // Append the first name input to the form 
+            form.appendChild(FN);
+
+            // Inserting a line break 
+            form.appendChild(br.cloneNode());
+
+            // Append the Last name to the form 
+            form.appendChild(LN);
+            form.appendChild(br.cloneNode());
+
+            // Append the Address to the form 
+            form.appendChild(AD);
+            form.appendChild(br.cloneNode());
+
+            // Append the Pincode to the form 
+            form.appendChild(PWD);
+            form.appendChild(br.cloneNode());
+
+            // Append the Gender to the form 
+            form.appendChild(GEN);
+            form.appendChild(br.cloneNode());
+
+            // Append the Food to the form 
+            form.appendChild(Food);
+            form.appendChild(br.cloneNode());
+
+            // Append the State to the form 
+            form.appendChild(STA);
+            form.appendChild(br.cloneNode());
+
+            // Append the Country to the form 
+            form.appendChild(COUN);
+            form.appendChild(br.cloneNode());
+
+            // Append the submit button to the form 
+            form.appendChild(s);
+
+            document.getElementsByTagName("body")[0]
+                .appendChild(form);
+        
+        function showInput() {
+            document.getElementById('GFG_DOWN').innerHTML =
+                document.getElementById("first").value;
+                
+        }
+    </script>
+</body>
+
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<style>
+.container{
+    width:40%;
+    padding:100px;
+    background-color: rgb(201, 194, 194);
+    border:1px solid green;
+}
+.tableid{
+    width:300px;
+}
+</style>
+<body>
+    <div class="container">
+        
+        <form name="myForm">
+            
+            <table id="tableid">
+    
+                <tr>
+                    <th>Name</th>
+                    <td>
+                        <input type="text" name="name" placeholder="First Name" id="name" onkeypress="return restrictCharacters(event);" /></td>
+                    <td><span id="span1"></span></td>
+                </tr>
+               
+                <tr>
+                    <th>Last Name</th>
+    
+                    <td>
+                        <input type="text" name="lname" placeholder="Last Name" id="lname"  /></td>
+                    <td><span id="span2"></span></td>
+                </tr>
+    
+                <tr>
+                    <th>Address</th>
+    
+                    <td>
+                        <input type="text" name="add" id="add" placeholder="Address" /></td>
+                    <td><span id="span3"></span></td>
+                </tr>
+                <tr>
+                    <th>Gender</th>
+    
+                    <td>
+                        <input type="text" name="gen" id="gen" placeholder="Gender" /></td>
+                    <td><span id="span4"></span></td>
+                </tr>
+                <tr>
+                    <th>Choice of Food</th>
+    
+                    <td>
+                        <!-- <input type="text" name="food" id="food" placeholder="Choice of Food" /> -->
+                        <select  name="food" id="food" style="width:185px;">
+                            <option value="option1">Option 1</option>
+                            <option value="option2">Option 2</option>
+                            <option value="option3">Option 3</option>
+                        </select></td>
+                    <td><span id="span5"></span></td>
+                </tr>
+                <tr>
+                    <th>State</th>
+    
+                    <td>
+                        <input type="text" name="state" id="state" placeholder="State" /></td>
+                    <td><span id="span6"></span></td>
+                </tr>
+                <tr>
+                    <th>Country</th>
+    
+                    <td>
+                        <input type="text" name="coun" id="coun" placeholder="Country" /></td>
+                    <td><span id="span7"></span></td>
+                </tr>
+    
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="button" value="Submit" onclick="check();" /></td>
+                    <td>
+                        <input type="reset" name="Reset" /></td>
+                </tr>
+    
+            </table>
+        </form>
+    
+        <div id="myTable">
+        </div>
+    
+    </div>
+    </div>
+    
+<script>
+var table;
+
+function check() {
+   
+    var name = document.myForm.name.value;
+    if (name == "" || name == null) {
+        document.getElementById("span1").innerHTML = "Please enter the Name";
+        document.myform.name.focus();
+        document.getElementById("name").style.border = "2px solid red";
+        return false;
+    }
+    else {
+        document.getElementById("span1").innerHTML = "";
+        document.getElementById("name").style.border = "2px solid green";
+    }
+
+   var lname = document.myForm.lname.value;
+   document.getElementById("span2").innerHTML = "";
+   document.getElementById("lname").style.border = "2px solid green";
+
+   var add = document.myForm.add.value;
+   document.getElementById("span3").innerHTML = "";
+   document.getElementById("add").style.border = "2px solid green";
+
+   var gen = document.myForm.gen.value;
+   document.getElementById("span4").innerHTML = "";
+   document.getElementById("gen").style.border = "2px solid green";
+
+   var food = document.myForm.food.value;
+   document.getElementById("span5").innerHTML = "";
+   document.getElementById("food").style.border = "2px solid green";
+
+   var state = document.myForm.state.value;
+   document.getElementById("span6").innerHTML = "";
+   document.getElementById("state").style.border = "2px solid green";
+
+   var coun = document.myForm.coun.value;
+   document.getElementById("span7").innerHTML = "";
+   document.getElementById("coun").style.border = "2px solid green";
+
+   
+    if (document.getElementById("data") == null)
+        createTable();
+    else {
+        appendRow();
+    }
+    return true;
+}
+
+
+function createTable() {
+
+    var myTableDiv = document.getElementById("myTable");  //indiv
+    table = document.createElement("TABLE");   //TABLE??
+    table.setAttribute("id", "data");
+    table.border = '1';
+    myTableDiv.appendChild(table);  //appendChild() insert it in the document (table --> myTableDiv)
+ 
+
+    var header = table.createTHead();
+
+    var th0 = table.tHead.appendChild(document.createElement("th"));
+    th0.innerHTML = "First Name";
+    var th1 = table.tHead.appendChild(document.createElement("th"));
+    th1.innerHTML = "Last Name";
+    var th1 = table.tHead.appendChild(document.createElement("th"));
+    th1.innerHTML = "Address";
+    var th1 = table.tHead.appendChild(document.createElement("th"));
+    th1.innerHTML = "Gender";
+    var th1 = table.tHead.appendChild(document.createElement("th"));
+    th1.innerHTML = "Food of choice";
+    var th1 = table.tHead.appendChild(document.createElement("th"));
+    th1.innerHTML = "State";
+    var th1 = table.tHead.appendChild(document.createElement("th"));
+    th1.innerHTML = "Country";
+
+
+    appendRow();
+
+}
+
+function appendRow() {
+    var name = document.myForm.name.value;
+    var lname = document.myForm.lname.value;
+    var add = document.myForm.add.value;
+    var gen = document.myForm.gen.value;
+    var food = document.myForm.food.value;
+    var state = document.myForm.state.value;
+    var coun = document.myForm.coun.value;
+
+    var rowCount = table.rows.length;
+    var row = table.insertRow(rowCount);
+
+    row.insertCell(0).innerHTML = name;
+    row.insertCell(1).innerHTML = lname;
+    row.insertCell(2).innerHTML = add;
+    row.insertCell(3).innerHTML = gen;
+    row.insertCell(4).innerHTML = food;
+    row.insertCell(5).innerHTML = state;
+    row.insertCell(6).innerHTML = coun;
+   
+   clearForm();
+
+
+}
+
+
+function clearForm() {
+
+
+    document.myForm.name.value = "";
+    document.myForm.lname.value = "";
+    document.myForm.add.value = "";
+    document.myForm.gen.value = "";
+    document.myForm.food.value = "";
+    document.myForm.state.value = "";
+    document.myForm.coun.value = "";
+
+
+
+}
+function restrictCharacters(evt) {
+
+    evt = (evt) ? evt : window.event;
+    var charCode = (evt.which) ? evt.which : evt.keyCode;
+    if (((charCode >= '65') && (charCode <= '90')) || ((charCode >= '97') && (charCode <= '122')) || (charCode == '32')) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+</script>
+</body>
+</html>
